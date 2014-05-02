@@ -1,0 +1,598 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+p, #main ul {  
+	font-family: "rooney-web",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	margin: 10px 0 20px 0;
+	line-height: 24px;
+}
+a {
+	color:red;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Main Template CSS */
+
+@font-face {
+    font-family: '28DaysLaterRegular';
+    src: url('28_days_later-webfont.eot');
+    src: url('28_days_later-webfont.eot?#iefix') format('embedded-opentype'),
+         url('28_days_later-webfont.woff') format('woff'),
+         url('28_days_later-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+	background: black url(grunge_chicken.jpg) fixed no-repeat center top;
+	-moz-background-size: cover; /* Fills to width of screen*/
+  	background-size: cover;	
+}
+h1 {
+	font-size: 65px;
+	margin-bottom:25px;
+    font-family: "28DaysLaterRegular",sans-serif;
+}
+h2, caption, .field-name-field-press-releases .field-label, .field-name-field-promo-images .field-label {
+	font-size: 45px;
+	margin-bottom:25px;
+    font-family: "28DaysLaterRegular",sans-serif;    
+    color: red;
+    font-weight: normal;
+}
+h3 {
+	font-size: 30px;
+	margin-bottom:20px;
+    font-family: "28DaysLaterRegular",sans-serif;    
+}
+em, strong {
+	font-weight: bold;
+}
+.italic {
+	font-style: italic;
+}
+.recenter {
+	position: relative;
+	top: -7px;
+}
+.inline {
+	display: inline;
+	float: left;
+	margin: 0;
+}
+#page {
+	min-width: 960px;
+	width:960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#navigation li a {
+	font-size: 28px;
+    font-family: "28DaysLaterRegular",sans-serif;
+    color: white;
+    text-decoration: none;
+}
+#navigation li a:hover, #navigation li a.active {
+	color: yellow;
+}
+
+/* Homepage Specific */
+#home_headlines {
+	width: 45%;
+	float: left;
+}
+#home_headlines a {
+	color: black;
+	text-decoration: none;
+}
+#home_body {
+	margin-left: 50%
+}
+.ss-icon.ss-social-circle {
+	font-size: 70px;
+	margin: 25px;
+}
+#social_homepage {
+	text-align: center;
+	margin-top: 50px;
+}
+#contact_social {
+	text-align: left;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+#contact_social .ss-icon.ss-social-circle {
+	margin: 0 50px 0 0;
+}
+
+#navigation {
+	margin: 10px 25px 25px 25px;
+	height: 150px;
+}
+.header_logo {
+	float: left;
+	position: relative;
+	left: -40px;
+}
+#ib_logo {
+	float: right;
+	margin-right: 30px;
+}
+#bcaf_logo {
+	float:left;
+	position: relative;
+	top: -10px;
+}
+#block-system-main-menu {
+	position: relative;
+	top: 85px;
+}
+#navigation li {
+	margin: 0 20px 0 20px;	
+}
+#top_tear {
+	clear: both;
+	height: 24px;
+	background: url(tear_top.png) no-repeat;
+	-moz-background-size: cover; 
+  	background-size: cover;	
+  	opacity: .8;	
+}
+#bottom_tear {
+	height: 24px;
+	background: url(tear_bottom.png) no-repeat;
+	-moz-background-size: cover; 
+  	background-size: cover;	
+  	opacity: .8;
+}
+.footer_credit {
+	float: right;	
+	margin: 30px;
+	color: white;
+	font-size: 16px;
+}
+#main-wrapper {
+	padding: 20px 50px;
+	background-color: white;
+	background-color: rgba(255, 255, 255, .8);
+}
+#main {
+	display: inline-block;
+	width: 100%;
+}
+#main ul li {
+	list-style: disc;
+	margin-left: 50px;
+}
+
+/**
+ * Drop down menu.
+ */
+#block-system-main-menu ul li {
+	position:relative;
+	float:left;
+}
+#block-system-main-menu ul li a {
+	display:block;
+	padding-bottom:20px;
+	float:left;
+}
+#block-system-main-menu ul li ul {
+	display:none;
+	width: 175px;
+}
+#block-system-main-menu ul li:hover ul, #block-system-main-menu ul li.sfhover ul {
+	display:block;
+	position:absolute;
+	left:0px;
+	margin-top:30px;
+	z-index:10
+}
+#block-system-main-menu ul li ul li {
+	clear:left;
+	position: relative;
+	left: -15px;
+}
+#block-system-main-menu ul li ul li a {
+	padding-bottom:0px;
+	font-size: 23px;
+}
+ul li.expanded, ul li.leaf {
+	list-style: none;
+}
+
+/* Button code from - http://www.webdesignerwall.com/demo/css-buttons.html / http://speckyboy.com/2009/05/27/22-css-button-styling-tutorials-and-techniques/ */
+.red {
+	color: #FADDDE;
+	border: solid 1px #980C10;
+	background: #D81B21;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ED1C24), to(#AA1317));
+	background: -moz-linear-gradient(top, #ED1C24, #AA1317);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c24', endColorstr='#aa1317');
+}
+.button {
+	display: inline-block;
+	zoom: 1;
+	vertical-align: baseline;
+	margin: 0 2px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 20px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	width: 250px;
+	/*margin-left: 25%;*/
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.red:active {
+	color: #DE898C;
+	background: -webkit-gradient(linear, left top, left bottom, from(#AA1317), to(#ED1C24));
+	background: -moz-linear-gradient(top, #AA1317, #ED1C24);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aa1317', endColorstr='#ed1c24');
+}
+.red:hover {
+	background: #B61318;
+	background: -webkit-gradient(linear, left top, left bottom, from(#C9151B), to(#A11115));
+	background: -moz-linear-gradient(top, #C9151B, #A11115);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9151b', endColorstr='#a11115');
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+.button:hover {
+	text-decoration: none;
+}
+
+/* Act Styles */
+
+.node-act .field-name-field-photo img {
+	float: right;
+	margin-bottom: 20px;
+	border: solid 2px black;
+}
+.node-act .field-name-field-type-of-show, .node-act .field-name-field-city, .node-act .field-name-field-cast-names .field-label, .node-workshop .field-name-field-instructor-name, .node-workshop .field-name-field-city {  
+	color: red;
+	font-size: 30px;
+	margin-bottom:10px;
+    font-family: "28DaysLaterRegular",sans-serif;  
+    position: relative;
+    top: -7px;
+}
+.node-act .field-name-field-cast-names .field-label {
+	margin: 10px 0 0 0;
+}
+
+
+.node-act .field-name-field-cast-names .field-items, .node-workshop .field-name-field-associated-show, .node-event .field-name-field-acts, .field-collection-container, .node-event .field-name-field-ticket-price {
+	float:none;
+	font-family: "rooney-web",sans-serif; /* Should abstract the font declaration out and apply more generally */
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	margin: 10px 0 20px 0;
+	line-height: 24px;
+	display: inline;
+}
+.view-appearing-with .views-row-2, .view-appearing-with .views-row-3, .view-appearing-with .views-row-4 {
+	margin-top: 25px;
+	border-top: 1px solid black;
+	padding-top: 25px;
+}
+
+.field-name-field-video-embed-code p {
+	font-size: 15px;
+}
+
+/* Video related tweaks */
+.node-act .field-name-field-video-embed-code {
+	margin-top: 100px;
+}
+.node-act .field-name-field-video-embed-code iframe {
+	max-width: 520px;
+}
+.node-act #share_this {
+	float: right;
+	margin-bottom: 15px;
+}
+
+/* Acts list page */
+
+.views-table td, .views-table th { /* Need to abstract out this font declaration */
+	vertical-align: middle;
+	padding: 10px 10px 5px 10px;	
+	font-family: "rooney-web",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	margin: 10px 0 20px 0;
+	line-height: 24px;	
+}
+.views-table td img {
+	border: solid 1px black;
+}
+.views-table .views-field-body p {
+	font-size: 15px;
+	line-height: 21px;
+}
+
+table {
+	border: 2px solid #CCC;
+}
+
+tr.odd {
+	background-color: rgba(255, 255, 255, .3);
+	border-bottom: 1px solid #CCC;
+	padding: 0.1em 0.6em;
+}
+tr.even {
+	background-color: #EEE;
+	border-bottom: 1px solid #CCC;
+	padding: 0.1em 0.6em;
+}
+td.active {
+	background-color: rgba(255, 255, 255, .0);
+}
+.views-table th {
+	padding: 5px 5px 10px 5px;
+	text-align: center;
+	background-color: #EEE;
+	border-bottom: 2px solid #CCC;
+	border-top: 2px solid #CCC;	
+}
+.views-table th.active {
+	font-weight: bold;
+}
+.views-table th img {
+	margin-left: 5px;
+}
+
+/* Workshop Styles */
+
+.node-workshop .field-name-field-photo img {
+	float: right;
+	margin-left: 50px;
+	border: solid 2px black;
+}
+.node-workshop .field-name-field-instructor-bio .field-label {  
+	color: red;
+	font-size: 30px;
+	margin-bottom:10px;
+    font-family: "28DaysLaterRegular",sans-serif;  
+    position: relative;
+}
+.node-workshop .field-name-field-instructor-name, .node-workshop .field-name-field-city, .node-workshop .field-name-body, .node-workshop .field-name-field-instructor-bio {
+	/*width: 500px;*/
+	/*display: inline-block;
+	float: left; */
+}
+.node-workshop .field-name-field-date-and-time, .node-workshop .field-name-field-sold-out, .node-workshop .field-name-field-ticket-price, .node-workshop .field-name-field-ticket-link, .node-workshop .field-name-field-venue {
+	width:300px;
+	float: right;
+	clear: right;
+	font-size: 30px;
+	margin: 0 0 10px 30px;
+    font-family: "28DaysLaterRegular",sans-serif;   	
+}
+.node-workshop .field-name-field-date-and-time {
+	margin-top: 20px;
+}
+.node-workshop .field-name-field-ticket-link {
+	margin-bottom: 30px;
+}
+.node-workshop .field-name-field-associated-show {
+	display: inline-block;
+	margin: 0;	
+}
+.node-workshop .field-name-field-associated-show .field-label {
+	font-weight: normal;
+}
+
+/* Events */
+
+.content.act_info {
+	width: 500px;
+	float: left;
+}
+
+#show_sidebar {
+	width: 300px;
+	float: right;
+}
+
+#block-views-appearing-with-block h2 {
+	font-size: 35px;
+	margin: 15px 0;
+}
+.node-type-event h3 {
+	margin-bottom: 15px;
+}
+.node-type-event #page-title, .field-collection-view-links, .action-links.action-links-field-collection-add, .view-appearing-with h2 {
+	display: none;
+}
+.field-collection-view {
+	margin:0;
+	padding: 0;
+	border: 0;
+}
+.field-type-field-collection {
+	margin-top: 20px;
+}
+.sold_out {
+	display:block !important;
+	margin-top: 25px !important;
+}
+.node-type-act .field-name-field-ticket-price, .node-type-event .field-name-field-ticket-price {
+	position: relative;
+	top: -5px;
+}
+.node-type-act .field-name-field-ticket-price .field-item, .node-type-event .field-name-field-ticket-price .field-item {
+	display: inline;
+	padding-right: 15px;
+}
+.node-type-act .field-name-field-ticket-price .field-items {
+	margin: 0 0 15px 0;
+}
+
+/* Events List View */
+
+#block-views-events-block table {
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+/* Media Page */
+
+.node-media-page .field.field-name-field-promo-images .field-item {
+	float: left;
+	max-width: 240px;
+	margin: 10px 30px;
+	text-align: center;
+}
+.node-media-page .field.field-name-field-promo-images .field-item img {
+	border: solid 2px black;
+}
+.field-name-field-press-releases .field-item {
+	font-family: "rooney-web",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	margin: 10px 0 20px 0;
+	line-height: 24px;	
+}
+
+/* Blog Related */
+
+.page-blog #content, .node-type-article #content, .page-archive #content {
+	width: 67.5%;
+	display: inline-block;
+	float: left;
+}
+#sidebar-first {
+	width: 27.5%;
+	float: right;
+}
+
+/* Strip Unnecessary fileds from 'welcome' post */
+
+.front .node-sticky h2.article_title, .front .node-sticky .submitted, .front .node-sticky .links, .front .node-sticky hr, .front #node-2 .sharethis-wrapper {
+	display: none;
+}
+.node-article .links li {
+	margin-left: 0px !important;
+	padding-left: 0px;
+}
+.node-article h2.article_title a {
+	text-decoration: none;
+}
+.node-article hr {
+	border: 1px solid gray;
+	height: 0px;
+	margin-bottom: 25px;
+}
+
+.node-article #comments h2 {
+	clear: both;
+}
+.node-article #comments .submitted, .node-article #comments .form-item, .node-article #comments .form-select, .node-article #comments input, .node-article .field-name-field-tags, .node-article p {
+	font-family: "rooney-web",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	margin: 10px 0 20px 0;
+	line-height: 24px;
+}
+.node-sticky p {
+	font-size: 20px;
+}
+.node-article .field-name-field-image img {
+	border: 2px solid black;
+}
+.node-article .sharethis-wrapper {
+	margin-bottom: 20px;
+}
+
+/* Blog Sidebar Stuff */
+
+#edit-search-block-form--2 {
+	width: 130px;
+	/*height: 20px;*/
+}
+#sidebar-first .block {
+	margin: 0 0 30px 0;
+}
+#sidebar-first h2 {
+	color: black;
+	font-size: 30px;
+	margin-bottom:20px;
+    font-family: "28DaysLaterRegular",sans-serif;    
+}
+.tagclouds-term, #sidebar-first .more-link, input {  
+	font-family: "rooney-web",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	margin: 10px 0 20px 0;
+	line-height: 24px;
+}
+#edit-submit {
+	position: relative;
+	top: -1px;
+	margin-left: 10px;
+}
